@@ -58,7 +58,7 @@ export const setupKeyboard = (
   }
 
   // a mouseup anywhere on the page
-  document.body.onmouseup = () => {
+  document.querySelector('html')!.onmouseup = () => {
     isMouseDown = false;
     // has us stopping all active notes
     for (let i = 21; i < 109; i++) {
